@@ -1,0 +1,35 @@
+
+S	java:S106"9Replace this use of System.out or System.err by a logger.(àÕš¯øÿÿÿÿ
+P
+java:S1119";Refactor the code to remove this label and the need for it.(ÏËÕ4
+S	java:S106"9Replace this use of System.out or System.err by a logger.(•¢Š›üÿÿÿÿ
+S	java:S106"9Replace this use of System.out or System.err by a logger.(Áå¨ÿÿÿÿÿ
+S	java:S106-"9Replace this use of System.out or System.err by a logger.(“‡ü±ûÿÿÿÿ
+N	java:S1060"9Replace this use of System.out or System.err by a logger.(Öë†ó
+S	java:S1067"9Replace this use of System.out or System.err by a logger.(Õöİÿÿÿÿÿ
+N	java:S106?"9Replace this use of System.out or System.err by a logger.(‹Œ£ı
+N	java:S106@"9Replace this use of System.out or System.err by a logger.(Ğî¬œ
+S	java:S106B"9Replace this use of System.out or System.err by a logger.(¿á³Åşÿÿÿÿ
+N	java:S106D"9Replace this use of System.out or System.err by a logger.(´€øî
+N	java:S106M"9Replace this use of System.out or System.err by a logger.(©Ï‚€
+N	java:S106N"9Replace this use of System.out or System.err by a logger.(Ğî¬œ
+A
+java:S1481O"+Remove this unused "idEdit" local variable.(¾ê¹Ï
+P	java:S125P"<This block of commented-out lines of code should be removed.(ŸÏå1
+N	java:S106_"9Replace this use of System.out or System.err by a logger.(İ‚óÿ
+S	java:S106a"9Replace this use of System.out or System.err by a logger.(óÍ³•üÿÿÿÿ
+S	java:S106i"9Replace this use of System.out or System.err by a logger.(ÃÕíáüÿÿÿÿ
+N	java:S106j"9Replace this use of System.out or System.err by a logger.(ÂÒëê
+H
+java:S1481k"-Remove this unused "idRemove" local variable.(şÿ¿Øıÿÿÿÿ
+P	java:S125l"<This block of commented-out lines of code should be removed.(ŸÏå1
+N	java:S106z"9Replace this use of System.out or System.err by a logger.(²ü•½
+N	java:S106|"9Replace this use of System.out or System.err by a logger.(úÜü»
+O	java:S106ƒ"9Replace this use of System.out or System.err by a logger.(íşÇê
+T	java:S106„"9Replace this use of System.out or System.err by a logger.(¿á³Åşÿÿÿÿ
+I
+java:S1481…"-Remove this unused "bookName" local variable.(“¦¦ÿÿÿÿÿ
+Q	java:S125Š"<This block of commented-out lines of code should be removed.(ŸÏå1
+T	java:S106‘"9Replace this use of System.out or System.err by a logger.(ıšÆÙıÿÿÿÿ
+T	java:S106“"9Replace this use of System.out or System.err by a logger.(æ¤ÿúÿÿÿÿ
+o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ŠªÎ‘

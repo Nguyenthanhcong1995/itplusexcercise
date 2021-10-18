@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/dechan/dechan.iml" filepath="$PROJECT_DIR$/dechan/dechan.iml" />
+      <module fileurl="file://$PROJECT_DIR$/dethaygiao_de1/dethaygiao_de1.iml" filepath="$PROJECT_DIR$/dethaygiao_de1/dethaygiao_de1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/dethaygiao_de2/dethaygiao_de2.iml" filepath="$PROJECT_DIR$/dethaygiao_de2/dethaygiao_de2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/dethiitplus.iml" filepath="$PROJECT_DIR$/dethiitplus.iml" />
+      <module fileurl="file://$PROJECT_DIR$/dethithu_dele/dethithu_dele.iml" filepath="$PROJECT_DIR$/dethithu_dele/dethithu_dele.iml" />
+    </modules>
+  </component>
+</project>

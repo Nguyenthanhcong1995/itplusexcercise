@@ -1,0 +1,24 @@
+
+N	java:S106F"9Replace this use of System.out or System.err by a logger.(ä¡—ó
+S	java:S106H"9Replace this use of System.out or System.err by a logger.(Å‚³¡øÿÿÿÿ
+N	java:S106K"9Replace this use of System.out or System.err by a logger.(íÇý‹
+R
+java:S1117L"<Rename "birthDay" which hides the field declared at line 13.(Üö›Ÿ
+S	java:S106M"9Replace this use of System.out or System.err by a logger.(äÿ Úýÿÿÿÿ
+O
+java:S1117N"9Rename "score" which hides the field declared at line 14.(åØÚŸ
+N	java:S106U"9Replace this use of System.out or System.err by a logger.(öºƒŸ
+N	java:S106["9Replace this use of System.out or System.err by a logger.(÷‚ì¨
+N	java:S106^"9Replace this use of System.out or System.err by a logger.(½®©Ô
+S	java:S106a"9Replace this use of System.out or System.err by a logger.(–ÅŠïüÿÿÿÿ
+O
+java:S1117b"9Rename "score" which hides the field declared at line 14.(åØÚŸ
+N	java:S106f"9Replace this use of System.out or System.err by a logger.(²ü•½
+N	java:S106h"9Replace this use of System.out or System.err by a logger.(µŠ­Ë
+S	java:S106o"9Replace this use of System.out or System.err by a logger.(õ¿Ôæúÿÿÿÿ
+S	java:S106w"9Replace this use of System.out or System.err by a logger.(ýšÆÙýÿÿÿÿ
+S	java:S106x"9Replace this use of System.out or System.err by a logger.(ë§Ûºÿÿÿÿÿ
+S	java:S106}"9Replace this use of System.out or System.err by a logger.(äÿ Úýÿÿÿÿ
+T	java:S106ƒ"9Replace this use of System.out or System.err by a logger.(ïœ¨›úÿÿÿÿ
+O	java:S106„"9Replace this use of System.out or System.err by a logger.(™Ü½
+o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ŠªÎ‘

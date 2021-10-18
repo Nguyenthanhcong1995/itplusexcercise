@@ -1,0 +1,27 @@
+
+S	java:S106"9Replace this use of System.out or System.err by a logger.(ÜƒôÉıÿÿÿÿ
+P
+java:S1119";Refactor the code to remove this label and the need for it.(ÏËÕ4
+S	java:S106"9Replace this use of System.out or System.err by a logger.(§õßˆÿÿÿÿÿ
+S	java:S106A"9Replace this use of System.out or System.err by a logger.(Š°ù¾ùÿÿÿÿ
+N	java:S106I"9Replace this use of System.out or System.err by a logger.(ç´ø¹
+N	java:S106\"9Replace this use of System.out or System.err by a logger.(ı‘üĞ
+N	java:S106c"9Replace this use of System.out or System.err by a logger.(¨Ä½ù
+S	java:S106p"9Replace this use of System.out or System.err by a logger.(Ë¯•£şÿÿÿÿ
+N	java:S106v"9Replace this use of System.out or System.err by a logger.(úÚÄ 
+S	java:S106z"9Replace this use of System.out or System.err by a logger.(Åš´¤üÿÿÿÿ
+O	java:S106"9Replace this use of System.out or System.err by a logger.( çõÄ
+T	java:S106‚"9Replace this use of System.out or System.err by a logger.(ÒøÀôüÿÿÿÿ
+R	java:S125„"<This block of commented-out lines of code should be removed.(Î¶’
+N	java:S106—"9Replace this use of System.out or System.err by a logger.(›‹›
+T	java:S106"9Replace this use of System.out or System.err by a logger.(í¯Ô¤øÿÿÿÿ
+O	java:S106Ÿ"9Replace this use of System.out or System.err by a logger.( –ÕÕ
+R	java:S125 "<This block of commented-out lines of code should be removed.(Î¶’
+N	java:S106²"9Replace this use of System.out or System.err by a logger.(¹Î^
+W
+java:S1119´";Refactor the code to remove this label and the need for it.(ßå¯øúÿÿÿÿ
+T	java:S106¶"9Replace this use of System.out or System.err by a logger.(¢ÈŞ¡ıÿÿÿÿ
+T	java:S106Ç"9Replace this use of System.out or System.err by a logger.(Åü½´üÿÿÿÿ
+N	java:S106Ê"9Replace this use of System.out or System.err by a logger.(­ÃÎk
+O	java:S106Í"9Replace this use of System.out or System.err by a logger.(¥âÕ¹
+T	java:S106Ü"9Replace this use of System.out or System.err by a logger.(Š°ù¾ùÿÿÿÿ

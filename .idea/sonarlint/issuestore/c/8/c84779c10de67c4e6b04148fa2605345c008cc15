@@ -1,0 +1,18 @@
+
+S	java:S106#"9Replace this use of System.out or System.err by a logger.(ğ÷…şÿÿÿÿ
+N	java:S106$"9Replace this use of System.out or System.err by a logger.(§Í»
+S	java:S106&"9Replace this use of System.out or System.err by a logger.(øƒ–Íøÿÿÿÿ
+N	java:S106'"9Replace this use of System.out or System.err by a logger.(›Š°æ
+S	java:S106*"9Replace this use of System.out or System.err by a logger.(¹Ù¥çúÿÿÿÿ
+S	java:S106-"9Replace this use of System.out or System.err by a logger.(å‡úùÿÿÿÿÿ
+N	java:S1064"9Replace this use of System.out or System.err by a logger.(½’áú
+S	java:S1066"9Replace this use of System.out or System.err by a logger.(ğ÷…şÿÿÿÿ
+W
+java:S1075;"ARefactor your code to get this URI from a customizable parameter.(Å´öü
+†
+java:S1319	"kThe type of "productList" should be an interface such as "List" rather than the implementation "ArrayList".(œ× Îüÿÿÿÿ
+r
+java:S1104	"WMake productList a static final constant or non-public and provide accessors if needed.(œ× Îüÿÿÿÿ
+L
+java:S1444	"1Make this "public static productList" field final(œ× Îüÿÿÿÿ
+t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(É¦Ú¯øÿÿÿÿ
