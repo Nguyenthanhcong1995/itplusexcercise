@@ -51,7 +51,7 @@ public class Product {
 
     @Override
     public String toString() {
-        return "Product'Id: " + id +
+        return "Product's id: " + id +
                 " name: " + name +
                 " price: " + price +
                 " color: " + color;
