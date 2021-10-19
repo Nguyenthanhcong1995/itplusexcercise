@@ -5,11 +5,11 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 public class ProductManagement implements Storable,Searchable {
-    public ArrayList<Product> productArrayList;
+    public ArrayList<Product> products;
     public String fileName;
 
-    public ProductManagement(ArrayList<Product> productArrayList) {
-        this.productArrayList = productArrayList;
+    public ProductManagement(ArrayList<Product> products) {
+        this.products = products;
 
     }
 
@@ -19,7 +19,7 @@ public class ProductManagement implements Storable,Searchable {
 
     @Override
     public void searchByName(String name) {
-        List<Product> searchByName = productArrayList
+        List<Product> searchByName = products
                 .stream()
                 .filter(t -> name.equals(t.getName()))
                 .collect(Collectors.toList());
@@ -32,7 +32,7 @@ public class ProductManagement implements Storable,Searchable {
 
     @Override
     public void searchById(Long id) {
-        List<Product> searchById = productArrayList
+        List<Product> searchById = products
                 .stream()
                 .filter(t -> id == t.getId())
                 .collect(Collectors.toList());
@@ -44,17 +44,17 @@ public class ProductManagement implements Storable,Searchable {
 
     @Override
     public void add(Product product) {
-        productArrayList.add(product);
+        products.add(product);
     }
 
     @Override
-    public void remove(long productId) {
-        List<Product> removeById = productArrayList
+    public void remove(Long productId) {
+        List<Product> removeById = products
                 .stream()
                 .filter(t -> productId == t.getId())
                 .collect(Collectors.toList());
         if (removeById.isEmpty()) {
             System.out.println("Id not match");
-        } else productArrayList.removeAll(removeById);
+        } else products.removeAll(removeById);
     }
 }

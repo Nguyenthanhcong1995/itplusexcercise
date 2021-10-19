@@ -7,10 +7,13 @@ import java.util.stream.Collectors;
 
 public class Question2 {
     public static void main(String[] args) {
-        List<Integer> list = Arrays.asList(1, 24, 14, 8, 2, 58);
-        List<Integer> sortedList = list.stream()
+        List<Integer> listBeforeSort = Arrays.asList(1, 24, 14, 8, 2, 58);
+        List<Integer> listAfterSort =
+                listBeforeSort
+                .stream()
                 .sorted(Comparator.naturalOrder())
                 .collect(Collectors.toList());
-        sortedList.forEach(System.out::println);
+
+        listAfterSort.forEach(System.out::println);
     }
 }

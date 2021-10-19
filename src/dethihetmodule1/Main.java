@@ -6,7 +6,7 @@ import java.io.Reader;
 import java.util.*;
 
 public class Main {
-    public static ArrayList<Product> productList = new ArrayList<>();
+    public static ArrayList<Product> products = new ArrayList<>();
 
     public static void main(String[] args) throws FileNotFoundException {
         question1();
@@ -14,7 +14,7 @@ public class Main {
     }
 
     public static void question1() {
-        ProductManagement productManagement = new ProductManagement(productList);
+        ProductManagement productManagement = new ProductManagement(products);
 
         Product product1 = new Product(1001, "pencil", "a1", 3);
         Product product2 = new Product(1002, "book", "a2", 5);
@@ -32,9 +32,9 @@ public class Main {
         productManagement.add(product6);
 
 
-        productList.forEach(System.out::println);
+        products.forEach(System.out::println);
         System.out.println("-------------------------------------------------");
-        Set<Product> setPro = new HashSet<>(productList);
+        Set<Product> setPro = new HashSet<>(products);
         setPro.forEach(System.out::println);
         System.out.println("Search by name: ");
         productManagement.searchByName("pencil");
@@ -43,19 +43,19 @@ public class Main {
         productManagement.searchById(1005L);
 
         System.out.println("Remove by id");
-        productManagement.remove(1002);
+        productManagement.remove(1002L);
     }
 
     public static void question2() throws FileNotFoundException {
-        ArrayList<Product> productList = new ArrayList<>();
-        loadFileToArrayList(productList);
+        ArrayList<Product> productsQuestion2 = new ArrayList<>();
+        loadFileToCollection(productsQuestion2);
         System.out.println("Arrange product by name");
-        productList.sort(Comparator.comparing(Product::getName));
-        productList.forEach(System.out::println);
+        productsQuestion2.sort(Comparator.comparing(Product::getName));
+        productsQuestion2.forEach(System.out::println);
 
     }
 
-    static List<Product> loadFileToArrayList(ArrayList<Product> productList) throws FileNotFoundException {
+    static List<Product> loadFileToCollection(ArrayList<Product> productList) throws FileNotFoundException {
         String filePath = "/home/congpv/Downloads/n1008/product.txt";
         Reader readerFile = new FileReader(filePath);
         try (Scanner inputFile = new Scanner(readerFile)) {
