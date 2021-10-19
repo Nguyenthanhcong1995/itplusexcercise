@@ -5,63 +5,54 @@ import java.util.Scanner;
 public interface Input {
 
    default  int inputScanInt(Scanner input, String request) {
-        System.out.println(request);
-        Integer inputInt = null;
-        while (inputInt == null) {
-            String inputStr = input.nextLine();
+       System.out.println(request);
+       Integer inputInt;
+       while (true) {
+           String inputStr = input.nextLine();
 
-            try {
-                inputInt = Integer.parseInt(inputStr);
+           try {
+               inputInt = Integer.parseInt(inputStr);
+           } catch (NumberFormatException e) {
+               System.err.println("Wrong format, try again");
+               continue;
+           }
+           break;
+       }
 
-                if (inputInt != Integer.parseInt(inputStr)) {
-                   inputInt=null;
-                } else {
-                    inputInt = Integer.parseInt(inputStr);
-                }
-            } catch (NumberFormatException e) {
-                System.err.println("Wrong format, try again ");
-            }
-        }
-        return inputInt;
+       return inputInt;
     }
 
      default String inputString(Scanner input, String request) {
-        System.out.println(request);
+         System.out.println(request);
 
-        String inputStr = null;
-        while (inputStr == null) {
-            String inputString = input.nextLine();
-                inputStr=inputString;
-                if(inputStr.equals("")){
-                    System.err.println("Null, enter please");
-                    inputStr=null;
-                }else {
-                    inputStr=inputString;
-                }
-
-        }
-        return inputStr;
+         String outputString;
+         while (true){
+             String inputString=input.nextLine();
+             outputString=inputString;
+             if(outputString.isEmpty()){
+                 System.err.println("Enter string please");
+                 continue;
+             }
+             break;
+         }
+         return outputString;
     }
 
      default Double inputScanDub(Scanner input, String request) {
         System.out.println(request);
-        Double inputDou = null;
-        while (inputDou == null) {
+        Double inputDou;
+        while (true) {
             String inputStr = input.nextLine();
 
             try {
                 inputDou = Double.parseDouble(inputStr);
-
-                if (inputDou != Integer.parseInt(inputStr)) {
-                    inputDou=null;
-                } else {
-                    inputDou = Double.parseDouble(inputStr);
-
-                }
             } catch (NumberFormatException e) {
-                System.err.println("Wrong format, try again ");
+                System.err.println("Wrong format, try again");
+                continue;
             }
+            break;
         }
-        return inputDou;
+
+         return inputDou;
     }
 }
