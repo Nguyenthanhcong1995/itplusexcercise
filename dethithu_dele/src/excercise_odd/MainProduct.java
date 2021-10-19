@@ -98,19 +98,30 @@ public class MainProduct implements Activities, Search, FileInputOutput, Input {
     public void edit() {
         System.out.println("Edit product's information");
         int id = inputScanInt(input, "Enter product's id");
-        List<Product> edit = new ArrayList<>();
+        /*List<Product> editProducts = new ArrayList<>();
         for (Product product : products) {
 
             if (product.getId() == id) {
                 product.setColor(inputString(input, "Enter new color"));
                 product.setPrice(inputScanDub(input, "Enter new price"));
                 product.setName(inputString(input, "Enter new name"));
-                edit.add(product);
+                editProducts.add(product);
             }
         }
-        if (edit.size() == 0) {
+        if (editProducts.isEmpty()) {
             System.err.println("Id not match");
-        }
+        }else products.removeAll(editProducts);*/
+                products
+                .stream()
+                .filter(t->id==t.getId())
+                .findFirst()
+                .ifPresent(product -> {
+                    product.setName(inputString(input,"Enter new product's name"));
+                    product.setPrice(inputScanDub(input,"Enter new product's price"));
+                    product.setColor(inputString(input,"Enter product's color"));
+
+                });
+
     }
 
     @Override
@@ -126,7 +137,7 @@ public class MainProduct implements Activities, Search, FileInputOutput, Input {
                 .filter(product -> product.getName().contains(name))
                 .collect(Collectors.toList());
         if (searchByName.isEmpty()){
-            System.out.println("No such name");
+            System.out.println("Name not match");
         }else searchByName.forEach(System.out::println);
 
         /*for (Product product : products) {

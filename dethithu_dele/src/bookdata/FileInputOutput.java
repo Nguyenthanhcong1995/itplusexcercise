@@ -6,6 +6,7 @@ import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.Reader;
 import java.util.*;
+import java.util.stream.Collectors;
 
 public interface FileInputOutput {
     String path = "/home/congpv/Downloads/javaweb/dethithu_dele/src/bookdata/product.txt";
@@ -57,20 +58,14 @@ public interface FileInputOutput {
         productList.forEach(System.out::println);
     }
 
-    default void deleteById(int id, List<Product> productList) {
-        Iterator<Product> iter = productList.iterator();
-        int before = productList.size();
-        while (iter.hasNext()) {
-            if (iter.next().getId() == id) {
-                iter.remove();
-            }
-        }
-        int after=productList.size();
-        if(before==after){
-            System.err.println("Id not match");
-        }else {
-            System.out.println("Delete successful");
-        }
+    default void deleteById(int id, List<Product> products) {
+        List<Product> deleteProductById = products
+                .stream()
+                .filter(t -> id == t.getId())
+                .collect(Collectors.toList());
+        if (deleteProductById.isEmpty()){
+            System.out.println("id not match");
+        }else products.removeAll(deleteProductById);
     }
 }
 

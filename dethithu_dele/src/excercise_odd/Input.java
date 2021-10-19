@@ -3,7 +3,12 @@ package excercise_odd;
 import java.util.Scanner;
 
 public interface Input {
-
+    /**
+     * <h1>Function ask user enter integer, if wrong formatting enter again</h1>
+     * @param input
+     * @param request
+     * @return
+     */
    default  int inputScanInt(Scanner input, String request) {
        System.out.println(request);
        Integer inputInt;

@@ -15,16 +15,16 @@ public class Main {
     static ArrayList<Student> students = new ArrayList<>();
 
     public static void main(String[] args) throws FileNotFoundException {
-        loadFileToArrayList(students);
+        loadFileToCollection(students);
         Map<Integer, Student> map = students
                 .stream()
                 .collect(Collectors.toMap(Student::getId, Function.identity()));
         map.entrySet().forEach(System.out::println);
-        List<Student> studentList=new ArrayList<>(map.values());
-        studentList.forEach(System.out::println);
+        List<Student> studentShow=new ArrayList<>(map.values());
+        studentShow.forEach(System.out::println);
     }
 
-    static List<Student> loadFileToArrayList(ArrayList<Student> studentList) throws FileNotFoundException {
+    static List<Student> loadFileToCollection(ArrayList<Student> students) throws FileNotFoundException {
         Reader readerFile = new FileReader(path);
         try (Scanner inputFile = new Scanner(readerFile)) {
             while (inputFile.hasNextLine()) {
@@ -36,11 +36,11 @@ public class Main {
                 Float studentScore = Float.parseFloat(data[3]);
                 Student student = new Student(studentId, studentName, studentBirthday, studentScore);
 
-                studentList.add(student);
+                students.add(student);
 
             }
         }
-        return studentList;
+        return students;
 
     }
 

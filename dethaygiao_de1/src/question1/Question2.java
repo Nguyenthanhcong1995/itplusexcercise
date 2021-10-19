@@ -11,18 +11,18 @@ import java.util.stream.Collectors;
 
 public class Question2 {
 
-    static List<Book> bookList = new ArrayList<>();
+    static List<Book> books = new ArrayList<>();
 
     public static void main(String[] args) throws FileNotFoundException {
         System.out.println("Read file to ArrayList");
-        readFileToArrayList(bookList);
+        readFileToCollection(books);
         System.out.println("Print book list and count book");
         showBookList();
         System.out.println("Arrange book list and print");
         arrangeBookList();
     }
 
-    public static List<Book> readFileToArrayList(List<Book> bookList) throws FileNotFoundException {
+    public static List<Book> readFileToCollection(List<Book> bookList) throws FileNotFoundException {
         Reader readerFile = new FileReader("/home/congpv/Downloads/javaweb/Excercise_Modul1/book.txt");
         try (Scanner inputFile = new Scanner(readerFile)) {
             while (inputFile.hasNextLine()) {
@@ -39,14 +39,14 @@ public class Question2 {
     }
 
     public static void showBookList() {
-        System.out.println(bookList.size());
-        bookList.forEach(System.out::println);
+        System.out.println(books.size());
+        books.forEach(System.out::println);
     }
 
     public static void arrangeBookList() {
-        List<Book> arrange = bookList.stream()
+        List<Book> arrangedBook = books.stream()
                 .sorted(Comparator.comparing(Book::getName))
                 .collect(Collectors.toList());
-        arrange.forEach(System.out::println);
+        arrangedBook.forEach(System.out::println);
     }
 }

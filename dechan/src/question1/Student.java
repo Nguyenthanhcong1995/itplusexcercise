@@ -7,7 +7,7 @@ import java.util.stream.Collectors;
 
 public class Student implements Activity, Search  {
     Scanner input = new Scanner(System.in);
-    List<Student> studentList = new ArrayList<>();
+    List<Student> students = new ArrayList<>();
     private int id;
     private String name;
     private String birthDay;
@@ -77,7 +77,7 @@ public class Student implements Activity, Search  {
         System.out.println("Enter student's score");
         double score = input.nextDouble();
         Student student = new Student(studentId, studentName, birthDay, score);
-        studentList.add(student);
+        students.add(student);
     }
 
     @Override
@@ -85,7 +85,7 @@ public class Student implements Activity, Search  {
         System.out.println("Enter student's id");
         int studentId = input.nextInt();
         List<Student> studentEdit = new ArrayList<>();
-        for (Student edit : studentList) {
+        for (Student edit : students) {
             if (studentId == edit.getId()) {
                 studentEdit.add(edit);
                 System.out.println("Enter new name");
@@ -111,7 +111,7 @@ public class Student implements Activity, Search  {
         System.out.println("Enter student's name");
         String studentName = input.nextLine();
         List<Student> search = new ArrayList<>();
-        for (Student timkiem : studentList) {
+        for (Student timkiem : students) {
             if (studentName.contains(timkiem.getName()))
                 search.add(timkiem);
         }
@@ -124,7 +124,7 @@ public class Student implements Activity, Search  {
     public void searchBy(double score) {
         System.out.println("Enter student's score");
         double studentScore = input.nextDouble();
-        List<Student> searchScore = studentList.stream()
+        List<Student> searchScore = students.stream()
                 .filter(student -> student.getScore() == (studentScore))
                 .collect(Collectors.toList());
         if (searchScore.isEmpty()) {

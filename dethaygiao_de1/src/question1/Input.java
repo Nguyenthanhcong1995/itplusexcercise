@@ -8,10 +8,10 @@ public class Input {
         Scanner input=new Scanner(System.in);
         Integer inputInt;
         while (true) {
-            String inputStr = input.nextLine();
+            String inputString = input.nextLine();
 
             try {
-                inputInt = Integer.parseInt(inputStr);
+                inputInt = Integer.parseInt(inputString);
             } catch (NumberFormatException e) {
                 System.err.println("Wrong format, try again");
                 continue;
